@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import VideoBanner from "../components/VideoBanner";
 import LeftTextSection from "../components/LeftTextSection";
 import RightTextSection from "../components/RightTextSection";
+import Banner from "../components/Banner";
 
 const dataOne = {
   title: "BREUILLET (17920)",
@@ -63,6 +64,7 @@ export default function Home() {
         <LeftTextSection data={dataOne} />
         <RightTextSection data={dataTwo} />
         <LeftTextSection data={dataThree} />
+        <Banner />
       </main>
       <footer className=""></footer>
     </div>
