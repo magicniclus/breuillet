@@ -54,7 +54,7 @@ const Hero = () => {
               Envoyez-nous vos coordonnées et on vous rappelle très vite !
             </span>
           </h2>
-          <form className="">
+          <form id="form">
             <div className="flex justify-between flex-col lg:flex-row mt-7">
               <div className="lg:w-5/12 w-full max-w-[450px]">
                 <label
