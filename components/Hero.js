@@ -85,7 +85,7 @@ const Hero = () => {
               <div className="lg:w-5/12 w-full max-w-[450px] lg:mt-0 mt-7">
                 <label
                   htmlFor="thirstname"
-                  className="block text-lg font-medium leading-6 text-white"
+                  className="block text-lg font-light leading-6 text-white"
                 >
                   Prenom*
                 </label>
@@ -113,7 +113,7 @@ const Hero = () => {
               <div className="lg:w-5/12 w-full max-w-[450px]">
                 <label
                   htmlFor="email"
-                  className="block text-lg font-medium leading-6 text-white"
+                  className="block text-lg font-light leading-6 text-white"
                 >
                   Email*
                 </label>
@@ -139,7 +139,7 @@ const Hero = () => {
               <div className="lg:w-5/12 w-full max-w-[450px] lg:mt-0 mt-7">
                 <label
                   htmlFor="phone"
-                  className="block text-lg font-medium leading-6 text-white"
+                  className="block text-lg font-light leading-6 text-white"
                 >
                   Phone*
                 </label>
@@ -178,7 +178,7 @@ const Hero = () => {
                 <div className="text-sm leading-6">
                   <label
                     htmlFor="comments"
-                    className="font-medium text-white  ml-2"
+                    className="font-light text-white ml-2"
                   >
                     Madame
                   </label>
