@@ -1,5 +1,5 @@
 "use client";
-import { ArrowRightIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
+import { ChevronRightIcon } from "@heroicons/react/24/solid";
 import React from "react";
 
 const LeftTextSection = (props) => {
@@ -12,10 +12,10 @@ const LeftTextSection = (props) => {
 
   return (
     <section className="mt-24 w-full mx-auto max-w-7xl flex lg:flex-row flex-col bg-blue-200 justify-between min-h-[200px] lg:items-end items-center z-10">
-      <div className=" w-full flex lg:flex-row flex-col mx-auto">
+      <div className=" w-full flex lg:flex-row flex-col mx-auto min-h-[550px]">
         <div className="lg:w-3/6 w-full flex justify-start lg:justify-bottom items-end relative">
           <img
-            src="/images/logos/bulle_privilegie.png"
+            src={logo}
             alt="bulle"
             className="absolute -top-14 lg:top-0 right-[62%] lg:right-[10%] w-4/12 object-cover"
           />
