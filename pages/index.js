@@ -7,6 +7,7 @@ import RightTextSection from "../components/RightTextSection";
 import Comments from "../components/Comments";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
+import Cookies from "../components/Cookies";
 
 const dataOne = {
   title: "BREUILLET (17920)",
@@ -70,6 +71,7 @@ export default function Home() {
         <Comments />
       </main>
       <Footer />
+      <Cookies />
     </div>
   );
 }
