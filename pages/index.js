@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import VideoBanner from "../components/VideoBanner";
 import LeftTextSection from "../components/LeftTextSection";
+import RightTextSection from "../components/RightTextSection";
 
 const dataOne = {
   title: "BREUILLET (17920)",
@@ -42,7 +43,7 @@ const dataThree = {
     "Jardin privatif planté, clôturé et aménagé avec une terrasse en bois",
     "Garage attenant aux maisons 4 pièces",
   ],
-  img: "/images/background/background_house3.png",
+  img: "/images/background/backgroud_house3.png",
   imgAlt: "maison",
   logo: "/images/logos/bulle_piece.png",
 };
@@ -60,6 +61,8 @@ export default function Home() {
         <Hero />
         <VideoBanner />
         <LeftTextSection data={dataOne} />
+        <RightTextSection data={dataTwo} />
+        <LeftTextSection data={dataThree} />
       </main>
       <footer className=""></footer>
     </div>
