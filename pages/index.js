@@ -6,6 +6,7 @@ import LeftTextSection from "../components/LeftTextSection";
 import RightTextSection from "../components/RightTextSection";
 import Comments from "../components/Comments";
 import Banner from "../components/Banner";
+import Footer from "../components/Footer";
 
 const dataOne = {
   title: "BREUILLET (17920)",
@@ -68,7 +69,7 @@ export default function Home() {
         <Banner />
         <Comments />
       </main>
-      <footer className=""></footer>
+      <Footer />
     </div>
   );
 }
