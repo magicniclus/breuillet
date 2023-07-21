@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useRef, useState } from "react";
 import {
   PauseIcon,
@@ -55,23 +56,24 @@ const VideoBanner = () => {
           style={{ border: "20px solid white" }}
           ref={videoRef}
           autoPlay
+          loop
           onPlay={() => setIsPlaying(true)}
           onPause={() => setIsPlaying(false)}
           muted
         ></video>
+
         {isPlaying ? (
           <div
             onMouseEnter={() => setIsHover(true)}
             onMouseLeave={() => {
               setIsHover(false);
             }}
-            on
             className={
-              "p-3 bg-gray-300 absolute top-1/2 left-1/2 transform lg:translate-x-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-opacity-70 transition-opacity ease-in duration-300 " +
+              "p-3 bg-gray-300 absolute top-1/2 left-1/2 transform lg:translate-x-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-opacity-30 transition-opacity ease-in duration-300 " +
               (isHover ? "" : "hidden")
             }
           >
-            <PauseIcon className="h-20 w-20 text-blue" onClick={handlePlay} />
+            <PauseIcon className="h-20 w-20 text-white" onClick={handlePlay} />
           </div>
         ) : (
           <div
@@ -79,13 +81,12 @@ const VideoBanner = () => {
             onMouseLeave={() => {
               setIsHover(false);
             }}
-            on
             className={
-              "p-3 bg-gray-300 absolute top-1/2 left-1/2 transform lg:translate-x-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-opacity-70 transition-opacity ease-in duration-300 " +
+              "p-3 bg-gray-300 absolute top-1/2 left-1/2 transform lg:translate-x-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-opacity-30 transition-opacity ease-in duration-300 " +
               (isHover ? "" : "hidden")
             }
           >
-            <PlayIcon className="h-20 w-20 text-blue" onClick={handlePlay} />
+            <PlayIcon className="h-20 w-20 text-white" onClick={handlePlay} />
           </div>
         )}
         {isMuted ? (
@@ -94,14 +95,13 @@ const VideoBanner = () => {
             onMouseLeave={() => {
               setIsHover(false);
             }}
-            on
             className={
-              "p-1 bg-gray-300 absolute top-10 lg:top-20 right-10 lg:right-20 rounded-full bg-opacity-70 transition ease-in duration-100 " +
+              "p-1 bg-gray-300 absolute top-10 lg:top-20 right-10 lg:right-20 rounded-full bg-opacity-30 transition ease-in duration-100 " +
               (isHover ? "" : "opacity-0")
             }
           >
             <SpeakerXMarkIcon
-              className="h-5 w-5 text-blue"
+              className="h-5 w-5 text-white"
               onClick={() => {
                 videoRef.current.muted = false;
                 setIsMuted(false);
@@ -115,12 +115,12 @@ const VideoBanner = () => {
               setIsHover(false);
             }}
             className={
-              "p-1 bg-gray-300 absolute top-10 lg:top-20 right-10 lg:right-20 rounded-full bg-opacity-70 transition ease-in duration-100 " +
+              "p-1 bg-gray-300 absolute top-10 lg:top-20 right-10 lg:right-20 rounded-full bg-opacity-30 transition ease-in duration-100 " +
               (isHover ? "" : "opacity-0")
             }
           >
             <SpeakerWaveIcon
-              className="h-5 w-5 text-blue"
+              className="h-5 w-5 text-white"
               onClick={() => {
                 videoRef.current.muted = true;
                 setIsMuted(true);
