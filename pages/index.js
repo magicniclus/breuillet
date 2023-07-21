@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import VideoBanner from "../components/VideoBanner";
 import LeftTextSection from "../components/LeftTextSection";
 import RightTextSection from "../components/RightTextSection";
+import Comments from "../components/Comments";
 import Banner from "../components/Banner";
 
 const dataOne = {
@@ -26,7 +27,7 @@ const dataTwo = {
   description: "À PRIX TOUT DOUX",
   list: [
     "Résidence principale, secondaire, investissement patrimonial",
-    "Frais de notaire réduits : de l’ordre de 2 à 3% du prix de vente",
+    "Frais de notaire réduits : de l’ordre de 2 à 3% du prix de vente",
     "Aucune mauvaise surprise et pas de travaux supplémentaires à financer (sauf à votre demande)",
   ],
   img: "/images/background/background_house2.png",
@@ -65,6 +66,7 @@ export default function Home() {
         <RightTextSection data={dataTwo} />
         <LeftTextSection data={dataThree} />
         <Banner />
+        <Comments />
       </main>
       <footer className=""></footer>
     </div>
