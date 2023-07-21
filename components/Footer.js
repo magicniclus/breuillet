@@ -9,7 +9,7 @@ const Footer = () => {
           alt="signature-promotion"
           className="h-14 object-contain lg:mt-0 mt-5"
         />
-        <div className="flex lg:mt-0 mt-5 lg:justify-normal justify-center lg:mb-0 mb-5">
+        <div className="flex lg:mt-0 mt-5 lg:justify-normal justify-center items-center lg:mb-0 mb-5">
           <p>©Signature Promotion 2023 | </p>
           <a
             href="https://www.signature-promotion.fr/mentions-legales/"
