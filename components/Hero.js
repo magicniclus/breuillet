@@ -31,7 +31,10 @@ const Hero = () => {
   }, [firstname, lastname, email, phone, gender, acceptsTerms]);
 
   return (
-    <section className="mt-7 w-full mx-auto max-w-7xl flex lg:flex-row flex-col bg-blue-200 justify-between min-h-[200px] lg:items-end items-center z-10">
+    <section
+      id="form"
+      className="mt-7 w-full mx-auto max-w-7xl flex lg:flex-row flex-col bg-blue-200 justify-between min-h-[200px] lg:items-end items-center z-10"
+    >
       <div className="lg:w-11/12 w-full flex lg:flex-row flex-col mx-auto">
         <div className="lg:w-3/6 w-full pr-3 py-3 flex flex-col items-center justify-between ">
           <h1 className="text-3xl font-light text-blue text-center">
@@ -54,7 +57,7 @@ const Hero = () => {
               Envoyez-nous vos coordonnées et on vous rappelle très vite !
             </span>
           </h2>
-          <form id="form">
+          <form>
             <div className="flex justify-between flex-col lg:flex-row mt-7">
               <div className="lg:w-5/12 w-full max-w-[450px]">
                 <label
