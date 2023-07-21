@@ -1,8 +1,12 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { EnvelopeIcon } from "@heroicons/react/24/solid";
+import { writeUserData } from "../firebase/dataManager";
+import { useRouter } from "next/router";
 
 const Hero = () => {
+  const router = useRouter();
+
   const [firstname, setFirstname] = useState("");
   const [lastname, setLastname] = useState("");
   const [email, setEmail] = useState("");
@@ -29,6 +33,22 @@ const Hero = () => {
       setButtonColor(false);
     }
   }, [firstname, lastname, email, phone, gender, acceptsTerms]);
+
+  function generateUniqueId() {
+    return Date.now().toString(36) + Math.random().toString(36).substr(2, 9);
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const userId = generateUniqueId();
+    writeUserData(userId, lastname, firstname, email, phone, gender)
+      .then((success) => {
+        router.push("/merci");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
 
   return (
     <section
@@ -57,7 +77,7 @@ const Hero = () => {
               Envoyez-nous vos coordonnées et on vous rappelle très vite !
             </span>
           </h2>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="flex justify-between flex-col lg:flex-row mt-7">
               <div className="lg:w-5/12 w-full max-w-[450px]">
                 <label
