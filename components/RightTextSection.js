@@ -12,7 +12,7 @@ const RightTextSection = (props) => {
 
   return (
     <section className="mt-24 w-full mx-auto max-w-7xl flex lg:flex-row flex-col bg-blue-200 justify-between min-h-[200px] lg:items-end items-center z-10">
-      <div className=" w-full flex lg:flex-row flex-col mx-auto min-h-[550px]">
+      <div className=" w-full flex justify-end lg:flex-row flex-col mx-auto min-h-[550px]">
         <div className="lg:w-5/12 w-11/12 justify-center flex-col lg:mx-0 mx-auto lg:mt-0 mt-14 lg:flex hidden">
           <h2 className="text-3xl font-light text-blue lg:max-w-[70%]">
             {title}
