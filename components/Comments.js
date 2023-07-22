@@ -45,11 +45,13 @@ const Comments = () => {
           </div>
           <div className="bg-blue mt-10">
             <div className="mx-auto max-w-7xl px-6 py-14 sm:py-24 lg:flex lg:items-center lg:justify-between lg:px-8">
-              <h2 className=" text-2xl tracking-tight text-white font-raleway font-extrabold">
+              <h2 className=" text-2xl tracking-tight text-white font-raleway">
                 Vous avez un projet d'investissement immobilier ? <br />
                 Nous sommes là pour vous accompagner.
                 <br />
-                <span className="text-or">CONTACTEZ-NOUS !</span>
+                <span className="text-or font-bold mt-3 inline-block">
+                  CONTACTEZ-NOUS !
+                </span>
               </h2>
               <div className="mt-10 flex flex-col gap-x-6 lg:mt-0 lg:flex-shrink-0">
                 <a
