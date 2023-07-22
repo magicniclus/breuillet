@@ -14,15 +14,18 @@ const RightTextSection = (props) => {
     <section className="mt-24 w-full mx-auto max-w-7xl flex lg:flex-row flex-col bg-blue-200 justify-between min-h-[200px] lg:items-end items-center z-10">
       <div className=" w-full flex justify-end lg:flex-row flex-col mx-auto min-h-[550px]">
         <div className="lg:w-5/12 w-11/12 justify-center flex-col lg:mx-0 mx-auto lg:mt-0 mt-14 lg:flex hidden">
-          <h2 className="text-3xl font-light text-blue lg:max-w-[70%]">
+          <h2 className="text-3xl font-raleway font-bold text-blue lg:max-w-[70%]">
             {title}
           </h2>
-          <h3 className="text-3xl font-light text-or lg:max-w-[70%]">
+          <h3 className="text-3xl font-light text-or font-vidaloka">
             {description}
           </h3>
           <ul className="list-disc list-inside text-blue mt-7">
             {list.map((item, index) => (
-              <li key={index} className="text-lg list-none font-semibold mt-2">
+              <li
+                key={index}
+                className="text-lg list-none font-semibold mt-2 font-raleway max-w-[90%]"
+              >
                 <ChevronRightIcon className="inline-block w-4 h-4 mr-2 text-blue" />
                 {item}
               </li>
@@ -30,7 +33,7 @@ const RightTextSection = (props) => {
           </ul>
           <a
             href="#form"
-            className={`mx-auto rounded-md text-xl px-4 py-3 font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 mt-10 bg-or w-max mb-7`}
+            className={`mx-auto rounded-md text-xl px-4 py-3 font-extrabold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 mt-10 bg-or w-max mb-7 font-raleway`}
           >
             En savoir plus
           </a>
@@ -48,15 +51,18 @@ const RightTextSection = (props) => {
           />
         </div>
         <div className="lg:w-5/12 w-11/12 justify-center flex-col lg:mx-0 mx-auto lg:mt-0 mt-14 lg:hidden flex">
-          <h2 className="text-3xl font-light text-blue lg:max-w-[70%]">
+          <h2 className="text-3xl font-raleway font-bold text-blue lg:max-w-[70%]">
             {title}
           </h2>
-          <h3 className="text-3xl font-light text-or lg:max-w-[70%]">
+          <h3 className="text-3xl font-light text-or font-vidaloka">
             {description}
           </h3>
           <ul className="list-disc list-inside text-blue mt-7">
             {list.map((item, index) => (
-              <li key={index} className="text-lg list-none font-semibold mt-2">
+              <li
+                key={index}
+                className="text-lg list-none font-semibold mt-2 font-raleway lg:max-w-[70%]"
+              >
                 <ChevronRightIcon className="inline-block w-4 h-4 mr-2 text-blue" />
                 {item}
               </li>
@@ -64,7 +70,7 @@ const RightTextSection = (props) => {
           </ul>
           <a
             href="#form"
-            className={`mx-auto rounded-md text-xl px-4 py-3 font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 mt-10 bg-or w-max mb-7`}
+            className={`mx-auto rounded-md text-xl px-4 py-3 font-extrabold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 mt-10 bg-or w-max mb-7 font-raleway`}
           >
             En savoir plus
           </a>
