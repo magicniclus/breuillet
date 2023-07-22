@@ -56,7 +56,7 @@ const Comments = () => {
               <div className="mt-10 flex flex-col gap-x-6 lg:mt-0 lg:flex-shrink-0">
                 <a
                   href="#form"
-                  className="rounded-md text-xl px-4 py-3 font-bold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 mt-7 bg-or w-max font-raleway "
+                  className="rounded-md text-xl px-4 py-3 font-bold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 mt-7 bg-or max-w-[250px] font-raleway "
                 >
                   Prendre rendez-vous !
                 </a>
