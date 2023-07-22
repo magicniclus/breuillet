@@ -31,7 +31,9 @@ const VideoBanner = () => {
     videoRef.current.addEventListener("loadeddata", playVideo);
 
     return () => {
-      videoRef.current.removeEventListener("loadeddata", playVideo);
+      if (videoRef.current) {
+        videoRef.current.removeEventListener("loadeddata", playVideo);
+      }
     };
   }, []);
 
