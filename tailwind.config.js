@@ -8,23 +8,10 @@ module.exports = {
         house: "url('/images/background/background_house.png')",
       },
       fontFamily: {
-        sans: [
-          "Noto Sans",
-          "ui-sans-serif",
-          "system-ui",
-          "-apple-system",
-          "BlinkMacSystemFont",
-          "Segoe UI",
-          "Roboto",
-          "Helvetica Neue",
-          "Arial",
-          "Noto Sans",
-          "sans-serif",
-          "Apple Color Emoji",
-          "Segoe UI Emoji",
-          "Segoe UI Symbol",
-          "Noto Color Emoji",
-        ],
+        lato: ["Lato", "sans-serif"],
+        heavy: ["Heebo", "sans-serif"],
+        vidaloka: ["Vidaloka", "serif"],
+        raleway: ["Raleway", "sans-serif"], // Ajoutez cette ligne
       },
       colors: {
         blue: "#1E2849",
