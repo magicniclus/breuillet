@@ -256,6 +256,7 @@ const Hero = () => {
             <div className="flex flex-col w-full justify-center items-center">
               <button
                 type="submit"
+                disabled={buttonColor ? false : true}
                 className={`rounded-md text-xl px-4 py-3 font-extrabold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 mt-7 font-raleway ${
                   buttonColor ? "bg-or" : "bg-orLight"
                 }`}
