@@ -5,7 +5,7 @@ const Comments = () => {
   return (
     <section className="mt-24 w-full mx-auto max-w-7xl flex lg:flex-row flex-col bg-blue-200 justify-between items-center z-10">
       <div className=" w-full flex flex-col mx-auto justify-center items-center">
-        <h2 className="text-blue text-4xl text-center mt-5 lg:mt-0 mx-5 ">
+        <h2 className="text-blue text-4xl text-center mt-5 lg:mt-0 mx-5 font-raleway font-bold">
           C’est nos clients qui en parlent le mieux !
         </h2>
         <div className="flex items-center">
@@ -14,7 +14,7 @@ const Comments = () => {
             alt="immodvisor"
             className="w-14 mr-5"
           />
-          <h3 className="text-blue">
+          <h3 className="text-blue font-raleway">
             Tous nos commantaires sont certifiés Immodvisor
           </h3>
         </div>
@@ -45,8 +45,8 @@ const Comments = () => {
           </div>
           <div className="bg-blue mt-10">
             <div className="mx-auto max-w-7xl px-6 py-14 sm:py-24 lg:flex lg:items-center lg:justify-between lg:px-8">
-              <h2 className=" text-2xl tracking-tight text-white">
-                Vous avez un projet d'investisssment ? <br />
+              <h2 className=" text-2xl tracking-tight text-white font-raleway font-extrabold">
+                Vous avez un projet d'investissement immobilier ? <br />
                 Nous sommes là pour vous accompagner.
                 <br />
                 <span className="text-or">CONTACTEZ-NOUS !</span>
@@ -54,13 +54,13 @@ const Comments = () => {
               <div className="mt-10 flex flex-col gap-x-6 lg:mt-0 lg:flex-shrink-0">
                 <a
                   href="#form"
-                  className="rounded-md text-xl px-4 py-3 font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 mt-7  bg-or w-max"
+                  className="rounded-md text-xl px-4 py-3 font-bold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 mt-7 bg-or w-max font-raleway "
                 >
                   Prendre rendez-vous !
                 </a>
                 <a
                   href="tel:0556367038"
-                  className="font-semibold text-xl leading-6 text-white flex mt-4"
+                  className="text-xl leading-6 text-white flex mt-4 font-semibold font-lato"
                 >
                   <PhoneIcon className="h-6 w-auto mr-3 text-white" />
                   05 56 36 70 38
