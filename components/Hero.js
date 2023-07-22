@@ -75,7 +75,7 @@ const Hero = () => {
         <div className="bg-blue min-h-full lg:w-3/6 w-full px-10 py-7 mt-5 lg:mt-0">
           <h2 className="text-or text-2xl font-raleway">
             Vous souhaitez en savoir plus ?<br />
-            <span className="text-white text-2xl font-raleway">
+            <span className="text-white inline-block text-2xl font-raleway font-extrabold">
               Envoyez-nous vos coordonnées et on vous rappelle très vite !
             </span>
           </h2>
