@@ -20,7 +20,7 @@ const dataOne = {
     "Commune constituée de 25% d’espaces boisés",
     "À proximité de Royan (10 km)",
   ],
-  img: "/images/background/MARAIS-BREUILLET.png",
+  img: "/images/background/MARAIS-BREUILLET.jpg",
   imgAlt: "maison",
   logo: "/images/logos/bulle_privilegie.png",
 };
