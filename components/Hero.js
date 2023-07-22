@@ -57,23 +57,25 @@ const Hero = () => {
     >
       <div className="lg:w-11/12 w-full flex lg:flex-row flex-col mx-auto">
         <div className="lg:w-3/6 w-full pr-3 py-3 flex flex-col items-center justify-between ">
-          <h1 className="text-3xl font-light text-blue text-center">
+          <h1 className="text-3xl font-light text-blue text-center font-raleway ">
             DEVENEZ PROPRIÉTAIRE D'UNE MAISON NEUVE À{" "}
-            <span className="text-or">BREUILLET (17920)</span>
+            <span className="text-or font-vidaloka">BREUILLET (17920)</span>
           </h1>
           <img
             className="max-w-[45%] mt-5 lg:mt-0"
             src="./images/logos/logo_cambium.png"
           />
-          <h2 className="text-or text-4xl text-center mt-5 lg:mt-0">
+          <h2 className="text-or text-4xl font-light text-center mt-5 lg:mt-0 font-vidaloka">
             UNIQUE & EXCEPTIONNEL SUR <br />
-            <span className="text-5xl">LA CÔTE DE BEAUTÉ</span>
+            <span className="text-5xl font-extrabold font-raleway">
+              LA CÔTE DE BEAUTÉ
+            </span>
           </h2>
         </div>
         <div className="bg-blue min-h-full lg:w-3/6 w-full px-10 py-7 mt-5 lg:mt-0">
-          <h2 className="text-or text-2xl">
+          <h2 className="text-or text-2xl font-raleway">
             Vous souhaitez en savoir plus ?<br />
-            <span className="text-white text-2xl">
+            <span className="text-white text-2xl font-raleway">
               Envoyez-nous vos coordonnées et on vous rappelle très vite !
             </span>
           </h2>
@@ -82,7 +84,7 @@ const Hero = () => {
               <div className="lg:w-5/12 w-full max-w-[450px]">
                 <label
                   htmlFor="lastname"
-                  className="block text-lg font-medium leading-6 text-white"
+                  className="block text-lg font-medium leading-6 text-white font-raleway"
                 >
                   Nom*
                 </label>
@@ -100,7 +102,7 @@ const Hero = () => {
                     value={lastname}
                     onChange={(e) => setLastname(e.target.value)}
                     required
-                    className="block w-full rounded-md border-0 py-1.5 pl-10 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 py-1.5 pl-10 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 font-raleway"
                     placeholder="Doe"
                   />
                 </div>
@@ -108,7 +110,7 @@ const Hero = () => {
               <div className="lg:w-5/12 w-full max-w-[450px] lg:mt-0 mt-7">
                 <label
                   htmlFor="thirstname"
-                  className="block text-lg font-light leading-6 text-white"
+                  className="block text-lg font-light leading-6 text-white font-raleway"
                 >
                   Prenom*
                 </label>
@@ -126,7 +128,7 @@ const Hero = () => {
                     value={firstname}
                     onChange={(e) => setFirstname(e.target.value)}
                     required
-                    className="block w-full rounded-md border-0 py-1.5 pl-10 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 py-1.5 pl-10 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 font-raleway"
                     placeholder="John"
                   />
                 </div>
@@ -136,7 +138,7 @@ const Hero = () => {
               <div className="lg:w-5/12 w-full max-w-[450px]">
                 <label
                   htmlFor="email"
-                  className="block text-lg font-light leading-6 text-white"
+                  className="block text-lg font-light leading-6 text-white font-raleway"
                 >
                   Email*
                 </label>
@@ -154,7 +156,7 @@ const Hero = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
-                    className="block w-full rounded-md border-0 py-1.5 pl-10 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 py-1.5 pl-10 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 font-raleway"
                     placeholder="johnedoe@exemple.com"
                   />
                 </div>
@@ -162,7 +164,7 @@ const Hero = () => {
               <div className="lg:w-5/12 w-full max-w-[450px] lg:mt-0 mt-7">
                 <label
                   htmlFor="phone"
-                  className="block text-lg font-light leading-6 text-white"
+                  className="block text-lg font-light leading-6 text-white font-raleway"
                 >
                   Phone*
                 </label>
@@ -180,7 +182,7 @@ const Hero = () => {
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                     required
-                    className="block w-full rounded-md border-0 py-1.5 pl-10 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 py-1.5 pl-10 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 font-raleway"
                     placeholder="06 12 34 56 78"
                   />
                 </div>
@@ -195,13 +197,13 @@ const Hero = () => {
                     type="checkbox"
                     onChange={() => setGender("Madame")}
                     checked={gender === "Madame"}
-                    className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                    className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600 font-raleway"
                   />
                 </div>
                 <div className="text-sm leading-6">
                   <label
                     htmlFor="comments"
-                    className="font-light text-white ml-2"
+                    className="font-light text-white ml-2 font-raleway"
                   >
                     Madame
                   </label>
@@ -215,13 +217,13 @@ const Hero = () => {
                     type="checkbox"
                     onChange={() => setGender("Monsieur")}
                     checked={gender === "Monsieur"}
-                    className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                    className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600 font-raleway"
                   />
                 </div>
                 <div className="text-sm leading-6">
                   <label
                     htmlFor="comments"
-                    className="font-medium text-white  ml-2"
+                    className="font-medium text-white  ml-2 font-raleway"
                   >
                     Monsieur
                   </label>
@@ -237,13 +239,13 @@ const Hero = () => {
                     type="checkbox"
                     onChange={() => setAcceptsTerms(!acceptsTerms)}
                     checked={acceptsTerms}
-                    className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                    className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600 font-raleway"
                   />
                 </div>
                 <div className="text-xs leading-6 leading-1">
                   <label
                     htmlFor="comments"
-                    className="font-medium text-white ml-2"
+                    className="font-medium text-white ml-2 font-raleway"
                   >
                     J’accepte que mes données personnelles soient collectées
                     afin que SIGNATURE Promotion puisse me recontacter.*
@@ -254,13 +256,13 @@ const Hero = () => {
             <div className="flex flex-col w-full justify-center items-center">
               <button
                 type="submit"
-                className={`rounded-md text-xl px-4 py-3 font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 mt-7 ${
+                className={`rounded-md text-xl px-4 py-3 font-extrabold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 mt-7 font-raleway ${
                   buttonColor ? "bg-or" : "bg-orLight"
                 }`}
               >
                 Envoyer
               </button>
-              <p className="text-white mt-5 text-sm font-medium">
+              <p className="text-white mt-5 text-sm font-medium font-raleway">
                 * Champs obligatoires
               </p>
             </div>
