@@ -22,19 +22,20 @@ const LeftTextSection = (props) => {
           <img
             src={img}
             alt={imgAlt}
-            className="lg:w-11/12 w-full h-auto max-h-[450px] object-cover"
+            className="lg:w-11/12 w-full h-auto min-h-[450px] max-h-[450px] object-cover"
           />
         </div>
         <div className="lg:w-5/12 w-11/12 flex justify-center flex-col lg:mx-0 mx-auto lg:mt-0 mt-14">
-          <h2 className="text-3xl font-light text-blue lg:max-w-[70%]">
+          <h2 className="text-3xl text-blue lg:max-w-[70%] font-raleway font-bold">
             {title}
           </h2>
-          <h3 className="text-3xl font-light text-or lg:max-w-[70%]">
-            {description}
-          </h3>
+          <h3 className="text-3xl text-or font-vidaloka">{description}</h3>
           <ul className="list-disc list-inside text-blue mt-7">
             {list.map((item, index) => (
-              <li key={index} className="text-lg list-none font-semibold mt-2">
+              <li
+                key={index}
+                className="text-lg list-none font-semibold mt-2 font-raleway"
+              >
                 <ChevronRightIcon className="inline-block w-4 h-4 mr-2 text-blue" />
                 {item}
               </li>
@@ -42,7 +43,7 @@ const LeftTextSection = (props) => {
           </ul>
           <a
             href="#form"
-            className={`mx-auto rounded-md text-xl px-4 py-3 font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 mt-10 bg-or w-max mb-7`}
+            className={`mx-auto rounded-md text-xl px-4 py-3 font-extrabold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 mt-10 bg-or w-max mb-7 font-raleway`}
           >
             En savoir plus
           </a>
