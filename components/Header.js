@@ -18,11 +18,10 @@ const Header = () => {
             className="h-6 lg:h-8 w-auto text-blue"
             aria-hidden="true"
           />
-          <span className="lg:text-4xl text-2xl text-blue"> TÉL.</span>
         </a>
         <a
-          href="tel:0649231380"
-          className="text-white lg:text-4xl text-2xl ml-3 font-semibold "
+          href="tel:0556367038"
+          className="text-white lg:text-4xl text-2xl ml-3 font-semibold font-lato"
         >
           05 56 36 70 38
         </a>
