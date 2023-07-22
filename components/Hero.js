@@ -51,10 +51,7 @@ const Hero = () => {
   };
 
   return (
-    <section
-      id="form"
-      className="mt-7 w-full mx-auto max-w-7xl flex lg:flex-row flex-col bg-blue-200 justify-between min-h-[200px] lg:items-end items-center z-10"
-    >
+    <section className="mt-7 w-full mx-auto max-w-7xl flex lg:flex-row flex-col bg-blue-200 justify-between min-h-[200px] lg:items-end items-center z-10">
       <div className="lg:w-11/12 w-full flex lg:flex-row flex-col mx-auto">
         <div className="lg:w-3/6 w-full pr-3 py-3 flex flex-col items-center justify-between ">
           <h1 className="text-3xl font-light text-blue text-center font-raleway ">
@@ -72,7 +69,10 @@ const Hero = () => {
             </span>
           </h2>
         </div>
-        <div className="bg-blue min-h-full lg:w-3/6 w-full px-10 py-7 mt-5 lg:mt-0">
+        <div
+          id="form"
+          className="bg-blue min-h-full lg:w-3/6 w-full px-10 py-7 mt-5 lg:mt-0"
+        >
           <h2 className="text-or text-2xl font-raleway">
             Vous souhaitez en savoir plus ?<br />
             <span className="text-white inline-block text-2xl font-raleway font-extrabold">
