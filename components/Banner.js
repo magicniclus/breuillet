@@ -9,7 +9,7 @@ const Banner = () => {
           alt="house"
           className="object-contain w-14 sm:mt-0 mb-5"
         />
-        <h2 className="ml-5 text-xl font-light">
+        <h2 className="ml-5 text-xl font-light font-raleway">
           Investissez dans une construction DURABLE
         </h2>
       </div>
@@ -19,7 +19,7 @@ const Banner = () => {
           alt="house"
           className="object-contain w-14 sm:mt-0 mb-5"
         />
-        <h2 className="ml-5 text-xl font-light">
+        <h2 className="ml-5 text-xl font-light font-raleway">
           Optez pour un acteur de PROXIMITÉ
         </h2>
       </div>
@@ -29,7 +29,7 @@ const Banner = () => {
           alt="house"
           className="object-contain w-14 sm:mt-0 mb-5"
         />
-        <h2 className="ml-5 text-xl font-light">
+        <h2 className="ml-5 text-xl font-light font-raleway">
           Appropriez-vous des des espaces conçus pour VIVRE HEUREUX
         </h2>
       </div>
