@@ -10,9 +10,7 @@ function MyApp({ Component, pageProps }) {
     };
     TagManager.initialize(tagManagerArgs);
   }, []);
-  return;
-
-  <Component {...pageProps} />;
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;
