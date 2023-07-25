@@ -83,12 +83,10 @@ const VideoBanner = () => {
           muted
           controls={isMobile}
         ></video>
-        {isPlaying ? (
+        {!isMobile && isPlaying ? (
           <div
             onMouseEnter={() => setIsHover(true)}
-            onMouseLeave={() => {
-              setIsHover(false);
-            }}
+            onMouseLeave={() => setIsHover(false)}
             className={
               "p-3 bg-gray-300 absolute top-1/2 left-1/2 transform lg:translate-x-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-opacity-30 transition-opacity ease-in duration-300 " +
               (isHover ? "" : "hidden")
@@ -96,12 +94,12 @@ const VideoBanner = () => {
           >
             <PauseIcon className="h-20 w-20 text-white" onClick={handlePlay} />
           </div>
-        ) : (
+        ) : null}
+
+        {!isMobile && !isPlaying ? (
           <div
             onMouseEnter={() => setIsHover(true)}
-            onMouseLeave={() => {
-              setIsHover(false);
-            }}
+            onMouseLeave={() => setIsHover(false)}
             className={
               "p-3 bg-gray-300 absolute top-1/2 left-1/2 transform lg:translate-x-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-opacity-30 transition-opacity ease-in duration-300 lg:" +
               (isHover ? "" : "hidden ") +
@@ -110,13 +108,12 @@ const VideoBanner = () => {
           >
             <PlayIcon className="h-20 w-20 text-white" onClick={handlePlay} />
           </div>
-        )}
-        {isMuted ? (
+        ) : null}
+
+        {!isMobile && isMuted ? (
           <div
             onMouseEnter={() => setIsHover(true)}
-            onMouseLeave={() => {
-              setIsHover(false);
-            }}
+            onMouseLeave={() => setIsHover(false)}
             className={
               "p-1 bg-gray-300 absolute top-10 lg:top-20 right-10 lg:right-20 rounded-full bg-opacity-30 transition ease-in duration-100 " +
               (isHover ? "" : "opacity-0")
@@ -130,12 +127,12 @@ const VideoBanner = () => {
               }}
             />
           </div>
-        ) : (
+        ) : null}
+
+        {!isMobile && !isMuted ? (
           <div
             onMouseEnter={() => setIsHover(true)}
-            onMouseLeave={() => {
-              setIsHover(false);
-            }}
+            onMouseLeave={() => setIsHover(false)}
             className={
               "p-1 bg-gray-300 absolute top-10 lg:top-20 right-10 lg:right-20 rounded-full bg-opacity-30 transition ease-in duration-100 " +
               (isHover ? "" : "opacity-0")
@@ -149,7 +146,7 @@ const VideoBanner = () => {
               }}
             />
           </div>
-        )}
+        ) : null}
       </div>
     </div>
   );
