@@ -13,7 +13,7 @@ const Header = () => {
         />
       </div>
       <div className="lg:w-5/12 w-content px-5 lg:px-0 py-3 lg:mt-0 mt-5 bg-or flex justify-center items-center  relative after:lg:absolute after:lg:w-full after:lg:h-24 after:lg:-bottom-24 after:lg:-left-0 after:lg:content-[''] after:lg:bg-or ">
-        <a href="tel:0649231380" className="flex items-center">
+        <a href="tel:0556367038" className="flex items-center">
           <PhoneIcon
             className="h-6 lg:h-8 w-auto text-blue"
             aria-hidden="true"
