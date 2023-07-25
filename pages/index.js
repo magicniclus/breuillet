@@ -8,6 +8,8 @@ import Comments from "../components/Comments";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 import Cookies from "../components/Cookies";
+import BrochureBanner from "../components/BrochureBanner";
+import Galerie from "../components/Galerie";
 
 const dataOne = {
   title: "BREUILLET (17920)",
@@ -77,6 +79,8 @@ export default function Home() {
         <RightTextSection data={dataTwo} />
         <LeftTextSection data={dataThree} />
         <Banner />
+        <Galerie />
+        <BrochureBanner />
         <Comments />
       </main>
       <Footer />
