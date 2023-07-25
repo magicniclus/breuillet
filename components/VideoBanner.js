@@ -12,6 +12,7 @@ const VideoBanner = () => {
   const [isPlaying, setIsPlaying] = useState(true);
   const [isMuted, setIsMuted] = useState(true);
   const [isHover, setIsHover] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   const handlePlay = () => {
     if (videoRef.current && isPlaying) {
@@ -34,6 +35,24 @@ const VideoBanner = () => {
       if (videoRef.current) {
         videoRef.current.removeEventListener("loadeddata", playVideo);
       }
+    };
+  }, []);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      const isMobile = window.matchMedia("(max-width: 800px)").matches;
+      setIsMobile(isMobile);
+    };
+
+    // vérifiez au chargement de la page
+    checkMobile();
+
+    // puis vérifiez chaque fois que la taille de la fenêtre change
+    window.addEventListener("resize", checkMobile);
+
+    // nettoyez en enlevant l'écouteur d'événement lors du démontage du composant
+    return () => {
+      window.removeEventListener("resize", checkMobile);
     };
   }, []);
 
@@ -62,6 +81,7 @@ const VideoBanner = () => {
           onPlay={() => setIsPlaying(true)}
           onPause={() => setIsPlaying(false)}
           muted
+          controls={isMobile}
         ></video>
         {isPlaying ? (
           <div
