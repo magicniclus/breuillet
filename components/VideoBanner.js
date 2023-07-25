@@ -63,7 +63,6 @@ const VideoBanner = () => {
           onPause={() => setIsPlaying(false)}
           muted
         ></video>
-
         {isPlaying ? (
           <div
             onMouseEnter={() => setIsHover(true)}
@@ -84,8 +83,9 @@ const VideoBanner = () => {
               setIsHover(false);
             }}
             className={
-              "p-3 bg-gray-300 absolute top-1/2 left-1/2 transform lg:translate-x-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-opacity-30 transition-opacity ease-in duration-300 " +
-              (isHover ? "" : "hidden")
+              "p-3 bg-gray-300 absolute top-1/2 left-1/2 transform lg:translate-x-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-opacity-30 transition-opacity ease-in duration-300 lg:" +
+              (isHover ? "" : "hidden ") +
+              (isHover ? "opacity-0" : "opacity-100")
             }
           >
             <PlayIcon className="h-20 w-20 text-white" onClick={handlePlay} />
