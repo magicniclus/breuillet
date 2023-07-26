@@ -66,8 +66,10 @@ const Hero = () => {
               <div className="lg:block hidden absolute left-0 bottom-1 w-full h-10 bg-or z-10"></div>
             </div>
             <div className="text-white font-raleway mt-10 z-10">
-              <h3 className="text-lg">Maisons neuves 3 ou 4 pièces</h3>
-              <p>à partir de 250 000 €(1)</p>
+              <h3 className="text-2xl">Maisons neuves 3 ou 4 pièces</h3>
+              <p className="text-2xl">
+                à partir de 250 000 € <sup>(1)</sup>
+              </p>
               <img
                 src="/images/logos/ptz+.png"
                 alt="prêt à taux zero"
