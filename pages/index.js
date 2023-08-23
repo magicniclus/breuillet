@@ -10,6 +10,8 @@ import Footer from "../components/Footer";
 import Cookies from "../components/Cookies";
 import BrochureBanner from "../components/BrochureBanner";
 import Galerie from "../components/Galerie";
+import React, { useEffect } from "react";
+import Router from "next/router";
 
 const dataOne = {
   title: "BREUILLET (17920)",
@@ -55,6 +57,21 @@ const dataThree = {
 };
 
 export default function Home() {
+  function FacebookPixel() {
+    useEffect(() => {
+      import("react-facebook-pixel")
+        .then((x) => x.default)
+        .then((ReactPixel) => {
+          ReactPixel.init("1598776293984358");
+          ReactPixel.pageView();
+
+          Router.events.on("routeChangeComplete", () => {
+            ReactPixel.pageView();
+          });
+        });
+    });
+    return null;
+  }
   return (
     <div className="">
       <Head>
@@ -71,6 +88,7 @@ export default function Home() {
           href="https://www.signature-promotion.fr/wp-content/themes/signature/images/favicon.ico"
         />
       </Head>
+      <FacebookPixel />
       <Header />
       <main className="flex flex-col z-50">
         <Hero />
