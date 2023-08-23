@@ -2,30 +2,45 @@ import "../styles/globals.css";
 import { useEffect } from "react";
 import TagManager from "react-gtm-module";
 import { useRouter } from "next/router";
+import Script from "next/script";
+import * as fbq from "../lib/fpixel";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
   useEffect(() => {
-    import("react-facebook-pixel")
-      .then((x) => x.default)
-      .then((ReactPixel) => {
-        ReactPixel.init("1598776293984358"); //
-        ReactPixel.pageView();
-
-        router.events.on("routeChangeComplete", () => {
-          ReactPixel.pageView();
-        });
-      });
-  }, [router.events]);
-  useEffect(() => {
-    const tagManagerArgs = {
-      gtmId: "GTM-TDB6JT84",
+    fbq.pageview();
+    const handleRouteChange = () => {
+      fbq.pageview();
     };
-    TagManager.initialize(tagManagerArgs);
+    router.events.on("routeChangeComplete", handleRouteChange);
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
   }, []);
 
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Script
+        id="fb-pixel"
+        strategy="afterInteractive"
+        src="https://connect.facebook.net/en_US/fbevents.js"
+      />
+      <Script strategy="afterInteractive">
+        {`
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script');
+        fbq('init', '${fbq.facebookPixelId}');
+        `}
+      </Script>
+      <Component {...pageProps} />;
+    </>
+  );
 }
 
 export default MyApp;

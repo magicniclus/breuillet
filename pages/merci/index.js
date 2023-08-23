@@ -3,14 +3,11 @@ import Head from "next/head";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import MerciContainer from "../../components/MerciContainer";
+import * as fbq from "../../lib/fpixel";
 
 const index = () => {
   useEffect(() => {
-    import("react-facebook-pixel")
-      .then((x) => x.default)
-      .then((ReactPixel) => {
-        ReactPixel.track("Purchase", { currency: "EUR", value: 250000 }); // Vous pouvez personnaliser ces valeurs
-      });
+    fbq.event("Lead");
   }, []);
   return (
     <>
