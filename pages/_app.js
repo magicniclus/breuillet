@@ -18,6 +18,12 @@ function MyApp({ Component, pageProps }) {
       router.events.off("routeChangeComplete", handleRouteChange);
     };
   }, []);
+  useEffect(() => {
+    const tagManagerArgs = {
+      gtmId: "GTM-NZ64JVXS",
+    };
+    TagManager.initialize(tagManagerArgs);
+  }, []);
 
   return (
     <>
