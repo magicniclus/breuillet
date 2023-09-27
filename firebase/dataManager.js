@@ -32,7 +32,7 @@ export function writeCRMUserData(nom, prenom, email, telephone, civilite) {
     email: email,
     telephone_mobile: telephone,
     civilite: civilite,
-    code_postal: "33000",
+    code_postal: "17000",
 
     demande: {
       date: dateEtHeure,
