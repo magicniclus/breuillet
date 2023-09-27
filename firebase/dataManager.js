@@ -32,9 +32,11 @@ export function writeCRMUserData(nom, prenom, email, telephone, civilite) {
     email: email,
     telephone_mobile: telephone,
     civilite: civilite,
+    code_postal: "33000",
+
     demande: {
       date: dateEtHeure,
-      id_programme: 27,
+      id_programme: 28,
       id_provenance: 22,
     },
   };
@@ -47,10 +49,12 @@ export function writeCRMUserData(nom, prenom, email, telephone, civilite) {
           password: "o53ifo07ox56511qv1m2473jijcg8d",
         },
       })
-      .then(() => {
+      .then((success) => {
+        console.log(success);
         resolve("success");
       })
       .catch((error) => {
+        console.log(error);
         reject(error);
       });
   });
