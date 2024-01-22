@@ -72,14 +72,8 @@ const Comments = () => {
               </div>
               <div className="mt-8 text-white text-xs">
                 <p>
-                  <sup>(1)</sup> Prix du lot 102, appartement 2 pièces de 51 m
-                  <sup>2</sup> habitables, avec loggia et stationnement
-                  privatifs.
-                </p>
-                <p>
-                  <sup>(2)</sup> Prix du lot 104, appartement 3 pièces de 60 m
-                  <sup>2</sup> habitables, avec loggia, terrasse et 2
-                  stationnements privatifs.
+                  <sup>(1)</sup> Prix du lot M28, maison duplex de 3 pièces de
+                  77 m<sup>2</sup> habitables, avec jardin et terrasse.
                 </p>
                 <p>
                   PTZ : dispositif d’aide à l’accession à la propriété
