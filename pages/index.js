@@ -14,8 +14,8 @@ import React, { useEffect } from "react";
 import Router from "next/router";
 
 const dataOne = {
-  title: "BREUILLET (17920)",
-  description: "ESPRIT VILLAGE ET NATURE PRÉSERVÉS",
+  title: "BREUILLET",
+  description: "ESPRIT VILLAGE ET NATURE PRÉSERVÉS À 12 MINUTES DE ROYAN",
   list: [
     "Adresse en centre-bourg avec tous les commerces et services accessibles à pied",
     "Plages de sable fin à 10 minutes",
@@ -29,7 +29,7 @@ const dataOne = {
   logo: "/images/logos/bulle_privilegie.png",
 };
 const dataTwo = {
-  title: "VOTRE MAISON SUR LA CÔTE",
+  title: "VOTRE MAISON SUR LA CÔTE DE BEAUTÉ",
   description: "À PRIX TOUT DOUX",
   list: [
     "Résidence principale, secondaire, investissement patrimonial",
