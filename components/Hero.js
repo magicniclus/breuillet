@@ -65,7 +65,7 @@ const Hero = () => {
               <h1 className="text-2xl font-bold text-white font-raleway z-10">
                 DEVENEZ PROPRIÉTAIRE À <br />{" "}
                 <span className="text-white  inline-block text-4xl font-vidaloka relative z-20">
-                  BREUILLET (17920)
+                  Royan Atlantique
                 </span>
               </h1>
               <div className="lg:block hidden absolute left-0 bottom-1 w-full h-10 bg-or z-10"></div>
@@ -73,7 +73,7 @@ const Hero = () => {
             <div className="text-white font-raleway mt-10 z-10">
               <h3 className="text-2xl">Maisons neuves 3 ou 4 pièces</h3>
               <p className="text-2xl">
-                à partir de 250 000 € <sup>(1)</sup>
+                à partir de 245 500 € <sup>(1)</sup>
               </p>
               <img
                 src="/images/logos/ptz+.png"
